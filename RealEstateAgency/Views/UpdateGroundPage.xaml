@@ -1,0 +1,21 @@
+﻿<Page x:Class="RealEstateAgency.Views.UpdateGroundPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RealEstateAgency.Views"
+      mc:Ignorable="d" 
+      Height="400" Width="600"
+      Title="UpdateGroundPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Label Content="Площадь" Width="100" HorizontalContentAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Margin="98,14,402,10"/>
+        <TextBox x:Name="squareTextbox" Height="20" Width="150" Grid.Row="1"/>
+        <Button x:Name="UpdateButton" Content="Подтвердить" Height="30" Width="100" Grid.Row="2" Click="UpdateButton_Click" Margin="249,57,251,93"/>
+    </Grid>
+</Page>
